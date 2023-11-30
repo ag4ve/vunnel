@@ -29,8 +29,8 @@ class Config:
 
 
 class Provider(provider.Provider):
-    # Bumping to version 2 because upstream changed the values of some data which requires reprocessing all of the history
-    __version__ = 2
+    # Bumping to version 3 to ensure history is reprocessed for vuln in needs-triage state
+    __version__ = 3
 
     def __init__(self, root: str, config: Config | None = None):
         if not config:
